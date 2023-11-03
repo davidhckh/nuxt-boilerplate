@@ -1,0 +1,39 @@
+@import "./reset.scss";
+@import "./grid.scss";
+
+html,
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  color: $color-white;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+  max-height: 100%;
+  background: $color-black;
+
+  font-size: clamp(10px, 2.5vh, 20px);
+  /**
+      @include mq("sm") {
+    font-size: clamp(13px, 1.2vh, 19px);
+  }*/
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  :focus {
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+#app {
+  @extend %cover;
+  position: relative;
+  overflow: hidden;
+}

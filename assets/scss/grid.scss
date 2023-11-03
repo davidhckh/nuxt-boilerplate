@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.75rem;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(min-content, max-content);
+}
